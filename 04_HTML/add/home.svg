@@ -7,30 +7,66 @@
    sodipodi:version="0.32"
    width="400pt"
    height="400pt"
-   sodipodi:docbase="/var/www/html/svg_gallery/svg/arrows"
-   sodipodi:docname="arrow01_4.svg"
-   inkscape:version="0.38.1"
+   sodipodi:docbase="/home/nicu/svg_gal/arrows"
+   sodipodi:docname="/home/nicu/svg_gal/arrows/arrow07_4.svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs
-     id="defs550" />
+     id="defs550">
+    <linearGradient
+       id="linearGradient650">
+      <stop
+         style="stop-color:#000;stop-opacity:1;"
+         offset="0"
+         id="stop651" />
+      <stop
+         style="stop-color:#fff;stop-opacity:1;"
+         offset="1"
+         id="stop652" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient650"
+       id="linearGradient653"
+       x1="1.00000548"
+       y1="0.53125000"
+       x2="1.16666901"
+       y2="0.53906250"
+       gradientUnits="objectBoundingBox"
+       spreadMethod="repeat" />
+    <linearGradient
+       xlink:href="#linearGradient650"
+       id="linearGradient654"
+       x1="1.22222710"
+       y1="0.46093750"
+       x2="1.16666818"
+       y2="0.46093750"
+       gradientUnits="objectBoundingBox"
+       spreadMethod="repeat" />
+  </defs>
   <sodipodi:namedview
      id="base"
-     inkscape:zoom="0.90750000"
-     inkscape:cx="200.00000"
-     inkscape:cy="200.00000"
-     inkscape:window-width="640"
-     inkscape:window-height="500"
-     inkscape:window-x="0"
-     inkscape:window-y="24" />
-  <path
-     style="fill:#ffffff;fill-rule:evenodd;stroke:black;stroke-opacity:1;stroke-width:10.000000;stroke-linejoin:round;stroke-linecap:butt;fill-opacity:1;stroke-dasharray:none;"
-     d="M 13.4261 124.07 L 387.119 121.832 C 387.119 121.832 388.237 53.5828 387.119 53.5828 C 386 53.5828 493.408 204.626 493.408 204.626 L 399.426 356.789 C 399.426 356.789 396.07 289.658 396.07 290.777 C 396.07 291.896 13.426 296.371 14.5449 295.252 L 13.4261 124.07 z "
-     id="path641"
-     sodipodi:nodetypes="cccccccc"
-     transform="matrix(-1.836909e-16,-1.000000,1.000000,-1.836909e-16,42.63695,504.4754)" />
+     showgrid="true" />
+  <g
+     id="g696"
+     transform="matrix(-1.836910e-16,-1.000000,1.000000,-1.836910e-16,3.560322,494.0663)">
+    <path
+       sodipodi:type="arc"
+       style="fill-rule:evenodd;stroke:none;fill:gray;fill-opacity:1;stroke-opacity:1;stroke-width:1pt;stroke-linejoin:miter;stroke-linecap:butt;"
+       id="path694"
+       d="M 459.652039 252.768921 A 166.534851 157.832336 0 1 0 126.582336,252.768921 A 166.535 157.832 0 1 0 459.652 252.769 L 293.117188 252.768921 z"
+       sodipodi:cx="293.117188"
+       sodipodi:cy="252.768921"
+       sodipodi:rx="166.534851"
+       sodipodi:ry="157.832336"
+       transform="matrix(1.000000,0.000000,0.000000,1.077694,-44.30380,-27.15454)" />
+    <path
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-opacity:1;stroke-width:1pt;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;"
+       d="M 142.405 178.006 L 302.215 178.006 L 302.215 142.405 L 372.627 229.43 L 303.006 316.456 L 301.424 284.019 L 143.197 283.228 L 142.405 178.006 z "
+       id="path695"
+       sodipodi:nodetypes="cccccccc"
+       transform="translate(-1.582279,15.03162)" />
+  </g>
 
   <rdf:RDF 
    xmlns="http://web.resource.org/cc/"
