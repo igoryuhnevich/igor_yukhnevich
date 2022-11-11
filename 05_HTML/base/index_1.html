@@ -33,15 +33,45 @@
             <td valign="top"><p><b>Простая форма авторизации:</b></p>
                 <form action=" http://fe.it-academy.by/TestForm.php">
                 <fieldset>
-                 <legend>Строка поиска</legend>
-                <p><input type="search" pattern="[\x1F-\xBF]*" name="user" autofocus>*<input type="submit" value="Искать"></p>
-                <p><input type="radio" name="site" value="on site" checked> на сайте <input type="radio" name="site" value="google">в google</p>
-                <p><i>*-обязательное поле</i><br>
-                <i>Автофокус в пооле поиска</i></p>
+                 <legend>Авторизируйтесь:</legend>
+                <p><input name="login" pattern="^[a-zA-Z]+$">*Логин</p>
+                <p><input type="password" pattern="^[a-zA-Z]+$" name="pass">*Пароль</p>
+                <p><input type="radio" name="system" value="on system"> Остаться в системе </p>
+                <p><input type="submit" value="Войти"></p>
+                <p><i>*-обязательное поле</i></p>
                 </fieldset>
                  </form>
                      </td>
+                     <td valign=><p><b>Опрос (голосование):</b></p>
+                        <form action=" http://fe.it-academy.by/TestForm.php">
+                        <fieldset>
+                         <legend>Как вам?</legend>
+                         <p><input name="golos" type="radio" value="0" checked> ничего</p>
+                         <p><input name="golos" type="radio" value="1"> неплохо</p>
+                         <p><input name="golos" type="radio" value="2"> хорошо</p>
+                         <p><input name="golos" type="radio" value="3"> супер</p>
+                         </p><p><input type="submit" value="Отправить"></p>
+                        <p><i>Есть скрытое поле</i><br> <i>name=date_voite,value="2013.12.31"</i></p>
+                        </fieldset>
+                         </form>
+                             </td>         
         </tr>
+        <tr>
+            <td valign=><p><b>Отзыв:</b></p>
+                <form action=" http://fe.it-academy.by/TestForm.php" method="post">
+                <fieldset>
+                 <legend>Оставьте Ваш отзыв</legend>
+                <p><input name="user" pattern="^[А-Яа-яЁё\s]+$">*Имя</p>
+                <p><input type="email" name="mail">*e-mail</p>
+                <p><iframe name="area" width="500" height="200" ></iframe></p>
+                <p><input type="radio" name="system" value="on system"> Остаться в системе </p>
+                <p><input type="submit" value="Отправить"></p>
+                <p><i>*-обязательное поле</i><br><i>поле email-с проверкой</i><br><i> метод POST</i></p>
+                </fieldset>
+                 </form>
+                     </td> 
+        </tr>
+
     </table>
  </body>
 </html>
