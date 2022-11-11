@@ -22,12 +22,16 @@
           font-family:Arial ;
           font-size: 21px;
           background-color: rgb(226, 26, 26);
-         /*Почему не меняется цвет при выводе на печать*/
+         /*Почему не меняется стиль при выводе на печать*/
         }
       </style>
-      <!-- Вариант 2
+      <!--
+       Вариант 
         <style>
         @media screen{
+          .rightpic{
+            float: right;
+        }
           body{
           font-family: sans-serif;
           font-size: 14px;
@@ -35,6 +39,9 @@
               }
         }
         @media print{
+          .rightpic{
+            float: right;
+        }
           body{
           font-family: Arial;
           font-size: 21px;
