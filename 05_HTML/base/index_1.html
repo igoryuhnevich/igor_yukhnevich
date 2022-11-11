@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Формы</title>
+ </head>
+ <body>
+    <table width="700px" border="1">
+        <tr>
+            <td valign="top"><p><b>Простая форма поиска с вариантами:</b></p>
+       <form action=" http://fe.it-academy.by/TestForm.php">
+       <fieldset>
+        <legend>Строка поиска</legend>
+       <p><input type="search" pattern="[A-Za-zА-Яа-яЁё]{,10}" name="user"><input type="submit" value="Искать"></p>
+       <p><input type="radio" name="site" value="on site" checked> на сайте <input type="radio" name="site" value="google">в google</p>
+       <i>Длинна запроса не более 10 символов</i>
+       </fieldset>
+        </form>
+            </td>
+            <td><p><b>Простая форма поиска с вариантами:</b></p>
+                <form action=" http://fe.it-academy.by/TestForm.php">
+                <fieldset>
+                 <legend>Строка поиска</legend>
+                <p><input type="search" pattern="[\x1F-\xBF]*" name="user" autofocus>*<input type="submit" value="Искать"></p>
+                <p><input type="radio" name="site" value="on site" checked> на сайте <input type="radio" name="site" value="google">в google</p>
+                <p><i>*-обязательное поле</i><br>
+                <i>Автофокус в пооле поиска</i></p>
+                </fieldset>
+                 </form>
+                     </td>
+        </tr>
+        <tr>
+            <td valign="top"><p><b>Простая форма авторизации:</b></p>
+                <form action=" http://fe.it-academy.by/TestForm.php">
+                <fieldset>
+                 <legend>Строка поиска</legend>
+                <p><input type="search" pattern="[\x1F-\xBF]*" name="user" autofocus>*<input type="submit" value="Искать"></p>
+                <p><input type="radio" name="site" value="on site" checked> на сайте <input type="radio" name="site" value="google">в google</p>
+                <p><i>*-обязательное поле</i><br>
+                <i>Автофокус в пооле поиска</i></p>
+                </fieldset>
+                 </form>
+                     </td>
+        </tr>
+    </table>
+ </body>
+</html>
