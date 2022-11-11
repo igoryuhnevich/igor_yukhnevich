@@ -1,0 +1,7 @@
+@import "style.css";
+@import "print.css";
+h1{
+    font-size: 120%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+}
