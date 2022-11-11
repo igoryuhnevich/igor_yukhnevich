@@ -5,13 +5,14 @@
   <title>Формы</title>
  </head>
  <body>
-    <table width="700px" border="1">
+    <table width="700px" >
         <tr>
             <td valign="top"><p><b>Простая форма поиска с вариантами:</b></p>
        <form action=" http://fe.it-academy.by/TestForm.php">
        <fieldset>
         <legend>Строка поиска</legend>
-       <p><input type="search" pattern="[:word:] " name="user"><input type="submit" value="Искать"></p>
+        <!-- патерн  буквы символы -->
+       <p><input type="search" pattern="([A-Za-z0-9]){,10} " name="user"><input type="submit" value="Искать"></p>
        <p><input type="radio" name="site" value="on site" checked> на сайте <input type="radio" name="site" value="google">в google</p>
        <i>Длинна запроса не более 10 символов</i>
        </fieldset>
@@ -21,7 +22,8 @@
                 <form action=" http://fe.it-academy.by/TestForm.php">
                 <fieldset>
                  <legend>Строка поиска</legend>
-                <p><input type="search" pattern="[\x1F-\xBF]*" name="user" autofocus>*<input type="submit" value="Искать"></p>
+                 <!-- паттерн слово на русском языке-->
+                <p><input type="search" pattern="^[А-Яа-яЁё\s]+$" name="user" autofocus>*<input type="submit" value="Искать"></p>
                 <p><input type="radio" name="site" value="on site" checked> на сайте <input type="radio" name="site" value="google">в google</p>
                 <p><i>*-обязательное поле</i><br>
                 <i>Автофокус в пооле поиска</i></p>
@@ -64,7 +66,8 @@
                  <legend>Оставьте Ваш отзыв</legend>
                 <p><input name="user" pattern="^[А-Яа-яЁё\s]+$">*Имя</p>
                 <p><input type="email" name="mail" pattern="(\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6})">*e-mail</p>
-               <!-- <p><iframe name="comment" width="100" height="50" >Вася   email_ex@mail.com</iframe></p>-->
+               <!--Не получается в ставить фрэйм с текстом-->
+               <!-- <p><iframe name="comment" width="100" height="50" > Иван   email_ex@mail.com </iframe></p>-->
                <p><input type="text" name="form" placeholder="email_ru@mail.com"></p>
                 <p><input type="submit" value="Отправить"></p>
                 <p><i>*-обязательное поле</i><br><i>поле email-с проверкой</i><br><i> метод POST</i></p>
@@ -121,6 +124,7 @@
                          <legend>Строка поиска</legend>
                         <p><input name="telname" pattern="^[А-Яа-яЁё\s]+$" placeholder="Имя:Только русские буквы"></p>
                         <p><i>Телефонный номер в формате</i><br>+XXX-XX-XXXXXXX,где Х-любое число</p>
+                        <!--Нет проверки телефона-->
                         <p><input type="tel" name="tel" pattern="\+{1,1}[0-9]{3}\-[0-9]{2}\-[0-9]{7}" placeholder="+375-29-1234567"></p>
                         <p><input type="submit"  value="Проверить"></p>
                         </fieldset>
