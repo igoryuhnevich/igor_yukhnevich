@@ -6,7 +6,32 @@
     </head>
     <body>
      <table width="100%" border="1">
-        <!DOCTYPE HTML>
+        <caption align="right">Заполните анкету</caption>
+        <tr>
+           <td>
+            <form name="user_data" action="http://fe.it-academy.by/TestForm.php" method="post">
+                <fieldset>
+                    <legend>Личные данные</legend>
+                    <p><input type="text" name="fam" pattern="" maxlength="25" required placeholder="Фамилия" autofocus></p>
+                    
+                    <fieldset>
+                        <legend>Паспортные данные</legend>
+                        <p><input type="search" pattern="([A-Za-z0-9]){,10} " name="user"><input type="submit" value="Искать"></p>
+                        <label><input type="radio" name="radio_gr" value="v_1" checked> на сайте </label>
+                        <label><input type="radio" name="radio_gr" value="v_2">в google</label><br>
+                       
+                    </fieldset>
+                    <fieldset>
+                        <legend>Дата рождения</legend>
+                        <p><input type="search" pattern="([A-Za-z0-9]){,10} " name="user"><input type="submit" value="Искать"></p>
+                        <label><input type="radio" name="radio_gr" value="v_1" checked> на сайте </label>
+                        <label><input type="radio" name="radio_gr" value="v_2">в google</label><br>
+                       
+                    </fieldset>
+                </fieldset>
+            </form>
+           </td>
+        </tr>
 
 
      </table>
