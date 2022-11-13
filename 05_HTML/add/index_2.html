@@ -45,12 +45,7 @@
                     <label for="adrs">Адрес:</label><br>
                     <textarea name="adress" id="adrs" lang="ru"></textarea>                    
                 </fieldset>
-            </form>
-           </td>
-        </tr>
-        <tr>
-            <td>
-             <form name="user_data1" action="http://fe.it-academy.by/TestForm.php" method="post">
+            
                  <fieldset>
                      <legend>Интересы</legend>
                      <fieldset>
@@ -82,51 +77,33 @@
                          </select>                        
                      </fieldset>                 
                  </fieldset>
-             </form>
-            </td>
-         </tr>
-         <tr>
-            <td>
-                <form name="user_data2" action="http://fe.it-academy.by/TestForm.php" method="post"></form>
+            
                     <fieldset>
                         <legend>Данные для входа и воссановления пароля</legend>
                            <p><input type="text" name="login" pattern="^[a-zA-Z]{5,}+$"  size="20" required placeholder="Логин"></p>
                            <p><input type="password" name="pass" pattern="^[a-zA-Z]{,10}+$" size="20" required placeholder="Пароль" autocomplete="off"></p>                        
                         </fieldset>
-            </td>
-         </tr>
-         <tr>
-            <td>
-                <form name="user_data3" action="http://fe.it-academy.by/TestForm.php" method="post"></form>
+           
                     <fieldset>
                         <legend>Координаты:</legend>
                            <p><input type="email" name="email" pattern="(\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6})" required placeholder="Введите адреспочты"></p>
                            <p><input type="url" name="url" required placeholder="Введите адрес сайта" ></p>                        
                         </fieldset>
-            </td>
-         </tr>
-         <tr>
-            <td>
-                <form name="user_data4" action="http://fe.it-academy.by/TestForm.php" method="post"></form>
+           
                     <fieldset>
                         <legend>Цифры</legend>
                            <p><input type="number" name="num_1" min="-2.5"max="2.5" step="0.1" value="0"></p>
                            <p><input type="range" min="1" max="10" step="1" value="5" ></p>                        
                         </fieldset>
-            </td>
-         </tr>
-         <tr>
-            <td>
-                <form name="user_data5" action="http://fe.it-academy.by/TestForm.php" method="post"></form>
+            
                     <fieldset>
                         <legend>Кнопки управления</legend>
                            <p><input type="submit" name="post" value="Отправить">
                               <input type="reset" value="Сбросить" ></p>
                               <!-- неполучилось скачать иконку email. Взял из примеров-->
-                              <button type="submit"><img src="message.svg"></button>                        
+                              <button type="button"><img src="message.svg"></button>                        
                         </fieldset>
-            </td>
-         </tr>
+            </form>
 
      </table>
     </body>
