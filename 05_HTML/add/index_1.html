@@ -52,7 +52,42 @@
             </form>
            </td>
         </tr>
-
+        <tr>
+            <td>
+             <form name="user_data1" action="http://fe.it-academy.by/TestForm.php" method="post">
+                 <fieldset>
+                     <legend>Интересы</legend>
+                     <fieldset>
+                         <legend>Хобби</legend>
+                         <label><input type="checkbox" name="hobby[]">Рыбалка</label><br>
+                         <label><input type="checkbox" name="hobby[]">Астрономия</label><br>
+                         <label><input type="checkbox" name="hobby[]">Дайвинг</label><br>
+                         <label><input type="checkbox" name="hobby[]">Марки</label><br>
+                     </fieldset>
+                     <fieldset>
+                         <legend>Домашние животные</legend>
+                         <select name="list[]" size="8" id="list_1" multiple>
+                             <optgroup label="Попугаи">
+                                <option value="1">Волнистый</option>
+                                <option value="2">Ара</option>
+                                <option value="13">Неразлучник</option>
+                             </optgroup>
+                             <optgroup label="Рыбка">
+                                <option value="4">Караси</option>
+                                <option value="5">Окуни</option>
+                                <option value="6">Осётр</option>
+                             </optgroup>
+                             <optgroup label="Птицы">
+                                <option value="7">Стая ворон</option>
+                                <option value="2">Аист</option>
+                                <option value="3">Археоптерикс</option>
+                             </optgroup>
+                         </select>                        
+                     </fieldset>                 
+                 </fieldset>
+             </form>
+            </td>
+         </tr>
 
      </table>
     </body>
