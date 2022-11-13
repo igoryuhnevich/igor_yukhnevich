@@ -5,28 +5,41 @@
      <title>Анкета</title>
     </head>
     <body>
-     <table width="100%" border="1">
-        <caption align="right">Заполните анкету</caption>
+     <table width="100%">
+        <caption>Заполните анкету</caption>
+        <!--<h1 align="center">Заполните анкету</h1>-->
         <tr>
            <td>
             <form name="user_data" action="http://fe.it-academy.by/TestForm.php" method="post">
                 <fieldset>
                     <legend>Личные данные</legend>
-                    <p><input type="text" name="fam" pattern="" maxlength="25" required placeholder="Фамилия" autofocus></p>
-                    
+                    <p><input type="text" name="fam" pattern="^[А-Яа-яЁё]+$" maxlength="25" required placeholder="Фамилия" autofocus></p>
+                    <p><input type="text" name="name" pattern="^[А-Яа-яЁё]+$" maxlength="20" required placeholder="Имя"></p>
+                    <p><input type="text" name="otec" pattern="^[А-Яа-яЁё]+$" maxlength="24" required placeholder="Отчество"></p>
                     <fieldset>
                         <legend>Паспортные данные</legend>
-                        <p><input type="search" pattern="([A-Za-z0-9]){,10} " name="user"><input type="submit" value="Искать"></p>
-                        <label><input type="radio" name="radio_gr" value="v_1" checked> на сайте </label>
-                        <label><input type="radio" name="radio_gr" value="v_2">в google</label><br>
-                       
+                        <p><input type="text" name="serial" pattern="[A-Z]{2,2}" maxlength="2" size="3" required placeholder="AA">
+                        <input type="text" name="num" pattern="[0-9]{7,7}" maxlength="7" size="9" required placeholder="1234567"></p>  
                     </fieldset>
                     <fieldset>
                         <legend>Дата рождения</legend>
-                        <p><input type="search" pattern="([A-Za-z0-9]){,10} " name="user"><input type="submit" value="Искать"></p>
-                        <label><input type="radio" name="radio_gr" value="v_1" checked> на сайте </label>
-                        <label><input type="radio" name="radio_gr" value="v_2">в google</label><br>
-                       
+                        <p><input type="text" name="year" pattern="[0-9]{4,4}" maxlength="4" size="3" required placeholder="2000"></p>
+                        <select name="list" size="1" id="list">
+                            <option value="1" selected>Январь</option>
+                            <option value="2">Февраль</option>
+                            <option value="3">Март</option>
+                            <option value="1">Апрель</option>
+                            <option value="2">Май</option>
+                            <option value="3">Июнь</option>
+                            <option value="1">Июль</option>
+                            <option value="2">Август</option>
+                            <option value="3">Сентябрь</option>
+                            <option value="1">Октябрь</option>
+                            <option value="2">Ноябрь</option>
+                            <option value="3">Декабрь</option>
+                        </select>
+                        <p><input type="number" name="number" min="1" max="31" step="1" size="3" required ></p>
+                          
                     </fieldset>
                 </fieldset>
             </form>
