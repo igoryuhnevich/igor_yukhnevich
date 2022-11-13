@@ -85,7 +85,7 @@
                 <form name="form_4" action=" http://fe.it-academy.by/TestForm.php" method="post">
                 <fieldset>
                  <legend>Город в РБ</legend>
-                 <p><select name="select" size="1">
+                 <p><select name="select" size="1" id="list">
                     <option value="s1">Города РБ</option>
                     <option value="s2">Брест</option>
                     <option value="s3">Минск</option>
@@ -95,15 +95,17 @@
                     <option value="s7">Рязань</option>
                     <option value="s8">Магадан</option>
                    </select>
-                    <select name="select_1" size="8" multiple>
-                    <option selected value="s1">Города РБ</option>
-                    <option value="s2">Брест</option>
-                    <option value="s3">Минск</option>
-                    <option value="s4">Витебск</option>
-                    <option selected value="s5">Города России</option>
-                    <option value="s6">Москва</option>
-                    <option value="s7">Рязань</option>
-                    <option value="s8">Магадан</option>
+                    <select name="select_1[]" size="8" multiple id="list_1">
+                    <optgroup label="Города РБ">
+                        <option value="s2">Брест</option>
+                        <option value="s3">Минск</option>
+                        <option value="s4">Витебск</option>
+                    </optgroup>
+                    <optgroup label="Города России">
+                        <option value="s6">Москва</option>
+                        <option value="s7">Рязань</option>
+                        <option value="s8">Магадан</option>
+                    </optgroup>
                    </select>
                    <input type="submit" value="Ок"></p> 
                 </fieldset>
