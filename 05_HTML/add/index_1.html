@@ -5,7 +5,7 @@
      <title>Анкета</title>
     </head>
     <body>
-     <table width="100%">
+     <table width="100%" border="1">
         <caption>Заполните анкету</caption>
         <!--<h1 align="center">Заполните анкету</h1>-->
         <tr>
@@ -61,12 +61,12 @@
                          <legend>Хобби</legend>
                          <label><input type="checkbox" name="hobby[]">Рыбалка</label><br>
                          <label><input type="checkbox" name="hobby[]">Астрономия</label><br>
-                         <label><input type="checkbox" name="hobby[]">Дайвинг</label><br>
+                  <label><input type="checkbox" name="hobby[]">Дайвинг</label><br>
                          <label><input type="checkbox" name="hobby[]">Марки</label><br>
                      </fieldset>
                      <fieldset>
                          <legend>Домашние животные</legend>
-                         <!--Выделяет только подряд , на выбор нехочет-->>
+                         <!--Выделяет только подряд , на выбор нехочет-->
                          <select name="list[]" size="8" id="list_1" multiple>
                              <optgroup label="Попугаи">
                                 <option value="1">Волнистый</option>
@@ -87,6 +87,15 @@
                      </fieldset>                 
                  </fieldset>
              </form>
+            </td>
+         </tr>
+         <tr>
+            <td>
+                    <fieldset>
+                        <legend>Данные для входа и воссановления пароля</legend>
+                           <p><input type="text" name="login" pattern="^[a-zA-Z]{5,}+$"  size="20" required placeholder="Логин"></p>
+                           <p><input type="password" name="pass" pattern="^[a-zA-Z]{,10}+$" size="20" required placeholder="Пароль" autocomplete="off"></p>                        
+                        </fieldset>
             </td>
          </tr>
 
