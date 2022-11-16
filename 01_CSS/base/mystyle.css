@@ -1,5 +1,6 @@
-@import "style.css";
 @import "print.css";
+@import "style.css";
+/* Порядок расположения фалов, их порядок, имеет значение*/
 h1{
     font-size: 120%;
     font-family: Arial, Helvetica, sans-serif;
