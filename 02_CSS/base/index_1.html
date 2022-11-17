@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>СSS. Фоны. Списки. Блоки </title>
+        <style>
+            ul {
+                font-weight: bold;
+                width:350px;
+                list-style-type:upper-roman;
+            }
+            li ul{ /*вложеный список*/
+                font-weight: normal;
+                list-style: lower-roman;
+            }
+            .block {
+               background-color: black; 
+                color: green;
+               width: 350px;
+               height: 4em;/* max высота 4 строки*/
+               overflow: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <ul> 
+            <li>Контейнер с кодом
+                <ul>
+                    <li>Цвет фона:черный</li>
+                    <li>Цвет текста:зеленый</li>
+                    <li>Ширина:400рх</li>
+                    <li>Максимальная высота контейнира: 4-е строки</li>
+                    <li>переполнение:автоматическое</li>
+                </ul>
+            </li>
+            <li>Список
+                <ul>
+                    <li>Ширина:400рх</li>
+                    <li>Тип списка: римские цифры</li>
+                    <li>Тип вложенного списка: римские нижний регистр цифры</li>
+                </ul>
+            </li>               
+            </ul>
+             </div>
+             <div class="block">
+                <!--Есть более современный вариант <pre>. Высота в 4 строки выбрана подбором
+                высоты текущего текста в рх -->
+                    <pre>
+#!/usr/bin/env python
+print 'Hello. I am a python program.' 
+name = raw_input("What is your name&")
+print "Hello there, "+ name + "!"
+                   </pre>
+             </div>
+    </body>
+</html>
