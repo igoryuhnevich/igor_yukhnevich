@@ -5,32 +5,35 @@
         <title>СSS.Фоны. Списки. Блоки</title>
 <style>
     .nav{
-        width: 30%;
-        height: 100px;
-        background-color: rgb(204, 71, 71);
+        width: 15em;
+        height: 432px;
+        background-color: rgb(172, 167, 166);
         float:left
     }
     .content{
-        width: 70%;
-        height: 120px;
-        background-color: rgb(96, 151, 71);
-        float:right
+        margin-bottom: 2em;
+        height: 200px;
+        background-color: rgb(64, 68, 63);
+        
+        overflow: auto;
+        
        
     }
-    .footer{
-        
-        height: 200px;
-        background-color: rgb(53, 43, 68);
-        clear:both;
+    .footer{              
+        background-color: rgb(67, 64, 73);
+       clear: left;
         
     }
+    .img{
+        float: right;   
+     }
 
 </style>
     </head>
     <body>
 
       <div class="nav">  
-        <h1>Блок навигации </h1>
+        <h1>Блок навигации</h1>
         <ul>
             <li>Ширина 15em</li>
             <li>Должен присутствовать цвет фона</li>
@@ -43,14 +46,22 @@
       </div>      
       <div class="content"> 
         <h1>Статья 1</h1>
-        <p>Размер блока: занимает всю доступную ширину<br>Должен присутствовать цвет фона<br>
+            Размер блока: занимает всю доступную ширину<br>Должен присутствовать цвет фона<br>
             Во всех "стятьях" сделайте отступ снизу от соседней равным. 2ем, при помощи свойства
-            margin-bottom</p>                                        
+            margin-bottom                                       
+      </div>
+      <div class="content"> 
+      <h1> Статья 2</h1>
+        Размер блока:<br>Занимает всю доступную ширину<br>Должен присутствовать цвет фона
+        <br> Во всех "статьях" сделайте отступ снизу равным 2 ем<br>
+        
+            <img src="Icon-Python.png" width="45px" height="45" class="img" >
+        
       </div>
       <div class="footer">
-        <h1>Статья 2</h1>
-        <p>Размер блока:<br>Занимает всю доступную ширину<br>Должен присутствовать цвет фона
-        <br> Во всех "статьях" сделайте отступ снизу равным 2 ем
+        Нижний блок, подвал.
+         Занимает всю доступную длину,ширину.Высота определяется помещённым внутрь контентом"
+         
       </div>
       
 
