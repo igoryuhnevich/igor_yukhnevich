@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+        
+
+<head>
+    <meta charset="utf-8">
+    <title>Горизонтальное меню сайта</title>
+    
+    <style type="text/css">	
+
+        #menu {
+          background: #0db5b5;
+          width: 60%;
+          padding:1;
+          text-align: center;
+          float:left;
+          font-family: Verdana, Arial, Helvetica, sans-serif; 
+        }
+        #menu a {
+          color: #3f3f3f;
+          text-decoration: none;
+        }
+        #menu a:hover {
+          color: #6b6b6b;
+        }
+        #menu ul {
+          padding:0;
+          margin:0;
+        }
+        #menu li {
+          list-style: none;
+          padding: 0 15px 0 0;
+          width:100px;
+          margin: 0 auto;
+          float:left;
+          line-height: 50px;
+        }
+        #menu li ul { 
+          position:absolute;
+          display: none;
+        } 
+        #menu li ul li {
+          float: none;
+          display: inline;
+          width:100px;
+          line-height:35px;
+        }
+        #menu li ul li:hover {
+          background: #c39b;
+        }
+        #menu li:hover ul {
+          display:block;
+        }
+        #menu li ul li { 
+          display: block; 
+          background:#92d3d3;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <ul id="menu">
+            <li><a href="https://www.internet-technologies.ru/news">Новости</a></li>
+            <li><a href="https://www.internet-technologies.ru/articles" target="_blank">Статьи</a>
+              <ul>
+                <li><a href="#">Ссылка 1</a></li>
+                <li><a href="#">Ссылка 2</a></li>
+                <li><a href="#">Ссылка 3</a></li>
+              </ul>
+            </li>
+            <li><a href="https://www.internet-technologies.ru/templates/">Шаблоны</a>
+              <ul>
+                <li><a href="#">Ссылка 1</a></li>
+              </ul>
+            </li>
+            <li><a href="https://www.internet-technologies.ru/books">Книги</a></li>
+            <li><a href="https://www.internet-technologies.ru/scripts">Скрипты</a></li>
+            <li><a href="https://www.internet-technologies.ru/lessons">Видео</a></li>
+            <li><a href="http://talk.internet-technologies.ru">Форум</a></li>
+          </ul>
+    </body>
+    </html>
