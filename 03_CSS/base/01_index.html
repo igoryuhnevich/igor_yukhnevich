@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>СSS.Адаптивная навигация</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>СSS.Адаптивная навигация.ul-li</title>
 <style>  
     nav ul{
         list-style: none;
@@ -32,15 +32,16 @@
         display:block;
     }
     .submenu{        
-        position: absolute;
+        
         visibility: hidden;
-        left: 0;     
+           
               
     }
     .topmenu li:hover {
         background: rgb(61, 61, 66);
     }
     .topmenu li:hover .submenu{
+        position: absolute;
         visibility: visible;
         
     }
@@ -67,16 +68,16 @@
     }
     
     .submenu{        
-        position: absolute;
+         position: absolute; 
         visibility: hidden;     
-        margin-left: 119px;
+        margin-left: 100px;
         margin-top: -1em;      
     }
     .topmenu li:hover {
         background: rgb(61, 61, 66);
     }
     .topmenu :hover .submenu{
-        visibility: visible;                    
+        visibility: visible;                   
     }   
     }
 </style>
