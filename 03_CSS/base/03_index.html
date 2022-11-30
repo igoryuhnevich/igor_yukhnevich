@@ -4,10 +4,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>СSS.Адаптивная навигация. Flexbox</title>
  <style>
-.MenuLevel1{
-
+    
+ .MenuLevel1 div{
+    float: left; 
+    background-color: yellow;
+    border: solid blue 1px;
+    position: relative;
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+  
+} 
+.MenuLevel2{
+    min-width: 100px;
+    display: none;
+ }
+ .MenuLevel2 div{
+    background-color: cyan;
+    border:solid blue 1px;
+    cursor:pointer;
+    float: none;
+ }
+ .MenuLevel1 div:hover .MenuLevel2{
+    display: block;
+    position: absolute;
+    
 }
-@media all and ( max-width: 600px){    
+
+@media all and ( max-width: 930px){    
  .MenuLevel1{
     width:100px;
  } 
@@ -16,6 +40,7 @@
     border: solid blue 1px;
     position: relative;
     cursor: pointer;
+    float: none;
  }
  .MenuLevel2{
     width: 150px;
