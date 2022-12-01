@@ -18,20 +18,17 @@
     position: absolute;
     min-width: 100px;
    /*  display: none; */
-   visibility: hidden;
-    opacity: 0; 
-    transform: translateY(10px); 
-    transition: .5 ease-in-out; 
-    /* transform: perspective(600px) rotateX(-90deg);
-    transform-origin: 0% 0%;
-    transition: .6s ease-in-out; */
+    opacity: 0;
+    z-index: 1;
+    visibility: hidden;  
+    transition: 0.5s ease-in-out;
  }
  .MenuLevel2 div{
     background-color: cyan;
     border:solid blue 1px;
     cursor:pointer;
     float: none;
-    transition: .5 ease-in-out; 
+    
  }
  .MenuLevel1 div:hover{
     background-color: rgb(76, 201, 159);
@@ -39,11 +36,8 @@
  .MenuLevel1 div:hover .MenuLevel2{
     visibility: visible;
     /* display: block; */
-     opacity: 2; 
-    transform: translateY(0px);  
-   /*  opacity: 1;
-  transform: perspective(600px) rotateX(0deg); */
-}
+    opacity: 1;
+} 
 
 @media all and ( max-width: 930px){    
  .MenuLevel1{
@@ -58,22 +52,31 @@
  }
  .MenuLevel2{
     width: 150px;
-    display: none;
+     /* display: none; */ 
+    z-index: 1;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: .5s ease-in-out; 
  }
  .MenuLevel2 div{
     background-color: cyan;
     border:solid blue 1px;
     cursor:pointer;
+    position: relative;
 }
 .MenuLevel1 div:hover{
     background-color: rgb(76, 201, 159);
  }
 .MenuLevel1 div:hover .MenuLevel2{
-    display: block;
-    position: absolute;
+     /* display: block;  */
+     visibility: visible; 
+    opacity: 1;
+    /* transform: translateY(0px); */
+    position: absolute; 
     left:80%;
     top:90%;
-    z-index: 1;
 }
 }
  </style>
