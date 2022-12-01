@@ -17,13 +17,14 @@
 .MenuLevel2{
     position: absolute;
     min-width: 100px;
-    display: none;
-    /* opacity: 0; 
+   /*  display: none; */
+   visibility: hidden;
+    opacity: 0; 
     transform: translateY(10px); 
-    transition: .5 ease-in-out;  */
-    transform: perspective(600px) rotateX(-90deg);
-  transform-origin: 0% 0%;
-  transition: .6s ease-in-out;
+    transition: .5 ease-in-out; 
+    /* transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transition: .6s ease-in-out; */
  }
  .MenuLevel2 div{
     background-color: cyan;
@@ -36,11 +37,12 @@
     background-color: rgb(76, 201, 159);
  }
  .MenuLevel1 div:hover .MenuLevel2{
-    display: block;
-    /*  opacity: 2; 
-    transform: translateY(0px);   */
-    opacity: 1;
-  transform: perspective(600px) rotateX(0deg);
+    visibility: visible;
+    /* display: block; */
+     opacity: 2; 
+    transform: translateY(0px);  
+   /*  opacity: 1;
+  transform: perspective(600px) rotateX(0deg); */
 }
 
 @media all and ( max-width: 930px){    
