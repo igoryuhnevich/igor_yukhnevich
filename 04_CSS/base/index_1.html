@@ -21,7 +21,7 @@
    }
    div {
      padding:7px; 
-    width: 620px; 
+    width: 630px; 
    }
    .wrap div{
     border: 1px ridge #1C6EA4;
@@ -29,11 +29,17 @@
    }
    ul{
     list-style-type:none;
-    counter-reset:img;
+    padding: 0px;
    }
-   li::before{
-    counter-increment:img;
-    content: 'планета' counter(img) ':';
+   li:before{                                 /* Работают только с парными тегами */
+    content:url('/04_CSS/base/images/A4.jpg');     /* поэтому img неполучится. Вставляем текст */ 
+   }
+   .secret{
+    display:none;                /* img скрыта  */
+   }                             /* при наведении на ссылку в.liste появится img*/
+   .list a:hover ~ .secret      /*используем селектор соседа, можно + . Весь текст не храним*/
+   {       
+    display: inline-block; 
    }
 
     </style>
@@ -42,32 +48,34 @@
    <div class="wrap">
           <h1> Форматы файлов.</h1>
          <div>
-            <p><a href="">.DOC</a> или .doc (от англ.document) - расширение имени файла, используемое для файлов,<br>
+            .DOC или .doc (от англ.<a href=""><img src="/04_CSS/base/images/strelka.png">document)</a>
+             - расширение имени файла, используемое для файлов,<br>
             представляющих текст, с разметкой или без. Расширение .DOC часто использовалось для <br>
             обозначения простых текстовых файлов без форматирования, однако позже стало <br>
             использоваться для двоичных форматов с разметкой. <br>
-            <a href="">Документ MS Word</a></p>
+            <a href="">Документ MS Word</a><img src="/04_CSS/base/images/word.jpg"></p>
         </div>
          <div>
-            <p class="second">  Portable Document Format() - межплатформенный формат электронных документов,<br>
+            <p class="second">  Portable Document Format(<img src="/04_CSS/base/images/strelka.png"><a href="">PDF</a>)
+             - межплатформенный формат электронных документов,<br>
             разработанный фирмой Adobe Systems с использованием ряда возможностей языка<br>
-            Postscript.<br><a href="">Документ PDF</a></p>
+            Postscript.<br><a href="">Документ PDF</a><img src="/04_CSS/base/images/pdf_.png"></p>
          </div>
          <div>
             <p>ZIP - популярный формат сжатия данных и архивации файлов.Файл в этом формате <br>
-            обычно имеет расширение<a href="">zip</a> и хранит в сжатом или несжатом виде один
+            обычно имеет расширение<img src="/04_CSS/base/images/strelka.png"><a href="">zip</a> и хранит в сжатом или несжатом виде один
             или несколько<br>файлов, которые можно из него извлечь путем распоковки с помощью специальной<br>
-            программы.<br><a href="">Архив</a>
+            программы.<br><a href="">Архив</a><img src="/04_CSS/base/images/zip.gif">
         </p>
          </div>
          
             <h2>Это список файлов</h2>
-            <ul>
-                <li><a href="">Документ MS Word</a></li>
-                <li><a href="">Документ PDF</a></li>
-                <li><a href="">Архив</a></li>
+            <ul class="list">
+                <li><a href="">Документ MS Word</a><img class="secret" src="/04_CSS/base/images/word.jpg"></li>
+                <li><a href="">Документ PDF</a><img class="secret" src="/04_CSS/base/images/pdf_.png"></li>
+                <li><a href="">Архив</a><img class="secret" src="/04_CSS/base/images/zip.gif"></li>
             </ul>
-         
+         <div class="secret">dfdgdfgd</div>
    </div>
 </body>
 </html>
