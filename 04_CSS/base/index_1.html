@@ -4,13 +4,38 @@
     <meta charset="utf-8">
     <title>CSS. Специальные селекторы. </title>
     <style>
-   div {
+   h1{
+    padding-left:12px ;
+   }
+   p{
+    padding: 0px;
+    margin: 0px;
+    text-indent: 10px;
+   }
+   a{
+    color: rgb(16, 16, 236);
     
    }
-   div{
-    border: 1px solid #1C6EA4;
-    border-radius: 0px 0px 40px 0px;
+   .second{
+    margin-bottom: 1em;
    }
+   div {
+     padding:7px; 
+    width: 620px; 
+   }
+   .wrap div{
+    border: 1px ridge #1C6EA4;
+    border-radius: 0px 17px 0px 17px;
+   }
+   ul{
+    list-style-type:none;
+    counter-reset:img;
+   }
+   li::before{
+    counter-increment:img;
+    content: 'планета' counter(img) ':';
+   }
+
     </style>
 </head>
 <body>
@@ -23,8 +48,26 @@
             использоваться для двоичных форматов с разметкой. <br>
             <a href="">Документ MS Word</a></p>
         </div>
-         <div></div>
-         <div></div>
+         <div>
+            <p class="second">  Portable Document Format() - межплатформенный формат электронных документов,<br>
+            разработанный фирмой Adobe Systems с использованием ряда возможностей языка<br>
+            Postscript.<br><a href="">Документ PDF</a></p>
+         </div>
+         <div>
+            <p>ZIP - популярный формат сжатия данных и архивации файлов.Файл в этом формате <br>
+            обычно имеет расширение<a href="">zip</a> и хранит в сжатом или несжатом виде один
+            или несколько<br>файлов, которые можно из него извлечь путем распоковки с помощью специальной<br>
+            программы.<br><a href="">Архив</a>
+        </p>
+         </div>
+         
+            <h2>Это список файлов</h2>
+            <ul>
+                <li><a href="">Документ MS Word</a></li>
+                <li><a href="">Документ PDF</a></li>
+                <li><a href="">Архив</a></li>
+            </ul>
+         
    </div>
 </body>
 </html>
