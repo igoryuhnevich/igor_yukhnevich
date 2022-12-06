@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>СSS.Адаптивная навигация.div </title>
  <style>
-    
+    /*  Не корректно работает меню выподания */
  .MenuLevel1 div{
     float: left; 
     background-color: yellow;
@@ -21,7 +21,8 @@
     opacity: 0;
     z-index: 1;
     visibility: hidden;  
-    transition: 0.5s ease-in-out;
+    transition: 0.5s  ease-in-out;
+     height: 0px; 
  }
  .MenuLevel2 div{
     background-color: cyan;
@@ -54,11 +55,10 @@
     width: 150px;
      /* display: none; */ 
     z-index: 1;
-    opacity: 0;
+     opacity: 0; 
     position: absolute;
     visibility: hidden;
-    transform: translateY(10px);
-    transition: .5s ease-in-out; 
+     transition:  .3s ;  
  }
  .MenuLevel2 div{
     background-color: cyan;
@@ -70,13 +70,12 @@
     background-color: rgb(76, 201, 159);
  }
 .MenuLevel1 div:hover .MenuLevel2{
-     /* display: block;  */
      visibility: visible; 
     opacity: 1;
-    /* transform: translateY(0px); */
+    /* transition: .5s ; */
     position: absolute; 
-    left:80%;
-    top:90%;
+     left:80%;
+    top:90%; 
 }
 }
  </style>
