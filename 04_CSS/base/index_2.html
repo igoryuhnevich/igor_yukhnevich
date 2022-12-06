@@ -4,18 +4,33 @@
     <meta charset="utf-8">
     <title>CSS. Специальные селекторы. </title>
     <style>
- .header{
-    background-color: darkolivegreen;
+ caption{
+    caption-side: bottom;
  }
- table tr {
-    border:dotted;
+ table{
+    border-collapse: collapse;
  }
+ tr,td {
+    border: 3px dotted rgb(247, 237, 237);
+ }
+ tr:nth-child(2n+1){
+    background-color: antiquewhite;
+ }
+ tr:first-child{
+    background-color: bisque;
+ }
+ tr:hover{
+    background-color: aquamarine;
+    color: blue;
+ }
+ 
   
     </style>
 </head>
 <body>
-   <table border="1">
-    <tr class="header">
+   <table>
+    <caption>Данные о сотрудниках</caption>
+    <tr>
         <td>ФИО</td>
         <td>пол</td>
         <td>должность</td>
@@ -63,7 +78,6 @@
         <td>3234534</td>
         <td>923123279</td>
     </tr>
-    <tr><td>Данные о сотрудниках</td></tr>
    </table>
    
 </body>

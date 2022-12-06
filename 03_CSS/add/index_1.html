@@ -38,6 +38,7 @@
     visibility: visible;
     /* display: block; */
     opacity: 1;
+    transition: 1.5s  ease-in-out;
 } 
 
 @media all and ( max-width: 930px){    
@@ -53,12 +54,12 @@
  }
  .MenuLevel2{
     width: 150px;
-     /* display: none; */ 
+    display: block; 
     z-index: 1;
      opacity: 0; 
     position: absolute;
-    visibility: hidden;
-     transition:  .3s ;  
+     visibility: hidden; 
+     transition:  0.3s ;  
  }
  .MenuLevel2 div{
     background-color: cyan;
@@ -70,13 +71,11 @@
     background-color: rgb(76, 201, 159);
  }
 .MenuLevel1 div:hover .MenuLevel2{
-     visibility: visible; 
+    visibility: visible;  
     opacity: 1;
-    /* transition: .5s ; */
-    position: absolute; 
-     left:80%;
-    top:90%; 
-}
+    transition-duration: 1.5s ; 
+    left:80%;
+    top:90%; }
 }
  </style>
     </head>
