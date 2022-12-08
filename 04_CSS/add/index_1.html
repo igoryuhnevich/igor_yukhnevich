@@ -20,12 +20,22 @@
      background: black;                /* цвет фона нечетная строка нечетная ячейка */
      color:white;                      /* цвет текста                               */
 } 
-
+tr:nth-child(even) td:nth-child(even) {       
+     background: black;                /* цвет фона нечетная строка нечетная ячейка */
+     color:white;                      /* цвет текста                               */
+} 
+ .chess{
+    counter-reset: cell 65;
+ }
+ td::before{
+    counter-increment: cell-1;
+    content: counter(cell);
+ }
    
     </style>
 </head>
 <body>
-    <table>
+    <table class="chess">
         <tr>
             <td></td>
             <td></td>
