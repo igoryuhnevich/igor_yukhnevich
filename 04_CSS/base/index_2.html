@@ -5,26 +5,27 @@
     <title>CSS. Специальные селекторы. </title>
     <style>
  caption{
-    caption-side: bottom;
+    caption-side: bottom;    /* заголовок в конце таблицы */
  }
  table{
-    border-collapse: collapse;
- }
- tr,td {
-    border: 3px dotted rgb(247, 237, 237);
- }
- tr:nth-child(2n+1){
-    background-color: antiquewhite;
- }
- tr:first-child{
-    background-color: bisque;
- }
- tr:hover{
-    background-color: rgb(196, 164, 76);
-    color: rgb(194, 224, 22);
+    border-collapse: collapse;  /* убираем двойные линии между ячейками */
  }
  
+ tr,td {
+    border: 1px dotted rgb(31, 29, 29); /* ячейки обведены контуром - пунктир */
+ }
+ tr:nth-child(2n+1){
+    background-color: antiquewhite; /* выделение всех нечетных строк  */
+ }
+  tr:first-child{
+    background-color: rgb(231, 192, 63);   /* выделение первого дочернего элемента */
+} 
   
+ tr:hover{                                    /* наведение на ссылку - меняет цвет */
+    background-color: rgb(196, 164, 76);
+    color: rgb(194, 224, 22);
+ } 
+
     </style>
 </head>
 <body>
