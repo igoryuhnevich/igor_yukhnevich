@@ -28,7 +28,7 @@ tr:nth-child(even) td:nth-child(even) {
     counter-reset: cell 65;
  }
  td::before{
-    counter-increment: cell-1;
+    counter-increment: cell -1;
     content: counter(cell);
  }
    
