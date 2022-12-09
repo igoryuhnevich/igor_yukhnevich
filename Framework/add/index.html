@@ -1,40 +1,48 @@
+
 <!doctype html>
-<html class="no-js" lang="en">
+<html  lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation Starter Template</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">        
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>skeleton Starter Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <style>
-   a {
+    a {
     text-decoration: underline;
    }
    h3{
     color:steelblue ;
    }
+   
   </style>
     </head>
-
-  <body>
-   <div class="grid-container grid-container-padded">
-        <div class="grid-x  grid-margin-x">
-            <div class="cell">
-                <div><h1>HOW-TO:Программа на Python, Часть 1 </h1> </div>
+ <!--            В одном месте - где пустая колонка - соседняя заняла всю строку (12) ?  -->
+  <body>  
+    <div class="container">  
+        <div class="row">
+            <div class="twelve columns">
+                ><h1>HOW-TO:Программа на Python, Часть 1 </h1> 
             </div>
-            <div class="cell">
-                <div>
+        </div>
+        <div class="row">    
+            <div class="three columns"> 
+                                                                        
                     <ul>
                         <li><a href="">Программа на Python - часть 1 </a></li>
                         <li><a href="">Программа на Python - часть 2 </a></li>
                         <li><a href="">Программа на Python - часть 3 </a></li>
                     </ul>
-                </div>
+                
+            </div>   
+            <div class="nine columns">
+                <div><h2>HOW-TO:Программа на Python,<br>Часть1<br></h2></div>
             </div>
-            <div class="cell">
-                <div class="item"><h2>HOW-TO:Программа на Python,<br>Часть1<br></h2></div>
-            </div>
-            <div class=" cell">
+        </div>
+        <div class="row">    
+            <div class="three columns">
                 <div>
                     <h3 id="upwards">Содержание</h3>
                     <ul>
@@ -43,7 +51,7 @@
                      </ul>
                 </div>
             </div>
-            <div class=" cell">
+            <div class="nine columns">
                 <div>
                     <p>Из множества существующих языков программирования Python — один из самых лёгких
                         в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
@@ -54,21 +62,25 @@
                     </p>
                 </div>
             </div>
-            <div class="cell">
+        </div> 
+        <div class="row">    
+            <div class="three columns">
                 <div>
                     <h3>Наша первая программа</h3>
                     <a href="#upwards">К содержанию</a>
                 </div>
             </div>
-            <div class=" cell">
+            <div class="nine columns">
                <div>
                 <p>Введите эти 4 строки:</p>
                </div>
             </div>
-            <div class=" cell">
-                <div></div>
+        </div>
+        <div class="row">     
+            <div class="three columns">
+                <div></div>                  <!-- Вот здесь ошибка -->
             </div>
-            <div class=" cell">
+            <div class="nine columns">
                 <div>
 <pre><code>
 #!/usr/bin/env python
@@ -94,7 +106,9 @@ greg@earth:~/python_examples$</code>
            <p>Вот и всё</p>
                  </div>
             </div>
-            <div class=" cell">
+        </div>
+        <div class="row">     
+            <div class="three columns">
                 <div>
                     <h3 id="list2">Пример цикла For</h3>
                   
@@ -102,7 +116,7 @@ greg@earth:~/python_examples$</code>
                 </div>
             </div>
 
-            <div class="cell">
+            <div class="nine columns">
                 <div>
                     <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
                         редактор и наберите следующую программу</p>
@@ -114,16 +128,14 @@ print cntr              </code>
                      <p><em>Не забудьте поставить символ табуляции перед строкой «print cntr»</em>. Это важно. В
                         Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки
                         как в других языках программирования, а отступы.</p>
+                </div>                   
             </div>
-
-            
         </div>
-
-
+    </div>
    
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js" crossorigin="anonymous"></script>  
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
       $(document).foundation();
     </script>
