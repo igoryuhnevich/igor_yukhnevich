@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CSS. Специальные селекторы. </title>
+
+    <style>
+ caption{
+    caption-side: bottom;    /* заголовок в конце таблицы */
+    
+ }
+ table{
+    border-collapse: collapse;  /* убираем двойные линии между ячейками */
+ }
+ 
+ tr,td {
+    border: 1px dotted rgb(31, 29, 29); /* ячейки обведены контуром - пунктир */
+ }
+ tr:nth-child(2n+1){
+    background-color: antiquewhite; /* выделение всех нечетных строк  */
+ }
+  tr:first-child{
+    background-color: rgb(75, 71, 63);
+    color:aliceblue                         /* выделение первого дочернего элемента */
+} 
+  
+ tr:hover{ 
+    background-color: dimgray;                                   /* наведение на ссылку - меняет цвет */
+    color: rgb(210, 214, 196);
+ } 
+ button{
+    background-color: blue;
+    border-radius: 10px;
+    height: 40px;
+    color:beige
+ }
+
+    </style>
+</head>
+<body>
+   <table id="data">
+    <caption>Данные о сотрудниках</caption>
+    <tr id="main">
+        <td>ФИО</td>
+        <td>пол</td>
+        <td>должность</td>
+        <td>дата рож.</td>
+        <td>Данные 01</td>
+        <td>Данные 02</td>
+    </tr>
+    <tr id="1tr">
+        <td>Иванов Иван Иванович</td>
+        <td>М</td>
+        <td>начальник</td>
+        <td>01.01.1960</td>
+        <td>4567</td>
+        <td>3453</td>
+    </tr>
+    <tr id="2tr">
+        <td>Петрова Илонна Петровна</td>
+        <td>Ж</td>
+        <td>секретарь</td>
+        <td>01.01.1989</td>
+        <td>98795</td>
+        <td>46534</td>
+    </tr>
+    <tr id="3tr">
+        <td>Сидоров Илья Игоревич</td>
+        <td>М</td>
+        <td>бухгалтер</td>
+        <td>01.01.1979</td>
+        <td>743434</td>
+        <td>987979</td>
+    </tr>
+    <tr id="4tr">
+        <td>Федор Федор Федорович</td>
+        <td>М</td>
+        <td>водитель</td>
+        <td>01.01.1963</td>
+        <td>743232434</td>
+        <td>9232379</td>
+    </tr>
+    <tr id="5tr">
+        <td>Крупин Сергей Иванович</td>
+        <td>М</td>
+        <td>водитель 2</td>
+        <td>01.01.1983</td>
+        <td>3234534</td>
+        <td>923123279</td>
+    </tr>
+   </table>
+   <button>Нет скрытых строк</button>
+ 
+   <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function($){    /* .hover */
+        $('#1tr').click(function(){               
+            $(this).hide(300)
+            $('button').text('Показать все строки')  })    /* можно оптимизировать  */
+        $('#2tr').click(function(){             
+            $(this).hide(300)
+            $('button').text('Показать все строки')  }) 
+        $('#3tr').click(function(){             
+            $(this).hide(300)
+            $('button').text('Показать все строки')  })    
+        $('#4tr').click(function(){             
+            $(this).hide(300)
+            $('button').text('Показать все строки')  })
+        $('#5tr').click(function(){             
+            $(this).hide(300)
+            $('button').text('Показать все строки') })
+        $('button').click(function(){                 
+               $('#1tr').show(100)
+               $('#2tr').show(100)
+               $('#3tr').show(100)  /* Почему не сработает  -  $('#data').show() */
+               $('#4tr').show(100)
+               $('#5tr').show(100)  
+              
+        })
+    } );
+
+    
+  </script>
+</body>
+</html>
